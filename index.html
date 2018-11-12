@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>super weblamas slider</title>
+<script type='text/javascript' src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script type='text/javascript' src='slider.js'></script>
+
+</head>
+<body>
+<div class="wrapper">
+<div class="slider">
+	<div class="slides">
+		<div class="slide" data-background="http://media.lamastravels.in.ua/lamblog/133/1.w612.jpg">
+			<h1>Морковка</h1>
+		</div>
+		<div class="slide" data-background="http://media.lamastravels.in.ua/lamblog/133/2.w612.jpg">
+			<div class="sometext">
+			Пюре со свининой. Зб даю
+			</div>
+		</div>
+		<div class="slide" data-background="http://media.lamastravels.in.ua/lamblog/133/3.w612.jpg">
+			<a href="http://lamastravels.in.ua/travels/camping-fast-food-133">ССылка на статью</a>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+
+<style>
+/*Обязятельные стили*/
+.slider .slides{
+	position:relative
+}
+.slider .slide{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	transition:opacity 0.3s linear 0s;
+}
+.slider .slide.active{
+	opacity:1;
+}
+.slides{
+height:100px;/*Нужно изменить под наши нужды*/
+
+}
+.slider ul li.active{
+background:red
+}
+</style>
